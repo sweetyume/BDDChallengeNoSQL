@@ -1,0 +1,22 @@
+{
+  "name": "petSittingMongo",
+  "version": "0.0.1",
+  "description": "petSitting noSQL challenge with MongoDB",
+  "main": "server.js",
+  "author": "acchan",
+  "license": "MIT",
+  "dependencies": {
+    "babel-preset-env": "^1.7.0",
+    "mongoose": "^5.1.0"
+  },
+  "scripts": {
+    "start": "nodemon server.js --exec babel-node --presets=env"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "eslint": "^4.19.1",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-node": "^6.0.1",
+    "nodemon": "^1.17.4"
+  }
+}
