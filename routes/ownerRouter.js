@@ -47,7 +47,7 @@ router.delete('/:id/delete', (req, res) => {
 // comments
 router.post('/:id/comment/create', bodyParser.urlencoded({ extended: true }), (req, res) => {
     // Création du nouveau commentaire
-    const newComment = new Comment({text: req.body.comments});
+    const newComment = new Comment(req.body);
     // sauvegarde du commentaire dans la collection
     newComment.save((err, comment) => {
         console.log(comment)
