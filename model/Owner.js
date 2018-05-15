@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
-import Comment from './Comment';
-import Animal from './Animal';
+import Comment from './comment';
+import Animal from './animal';
 
 const Schema = mongoose.Schema;
 
@@ -9,7 +9,6 @@ const newOwner = new Schema({
     mail: { type: String },
     photo: { type: String },
     comments: [{ type: Schema.Types.ObjectId, ref: 'Comment' }], // ref se réfère à la collection
-    animals: [{ type: Schema.Types.ObjectId, ref: '' }] // ref se réfère à la collection
-
+    animals: [{ type: Schema.Types.ObjectId, ref: 'Animal' }] 
 });
 module.exports = mongoose.model('Owner', newOwner);

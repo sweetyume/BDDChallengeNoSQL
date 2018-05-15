@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import bodyParser from 'body-parser';
 
-import Owner from '../model/Owner';
+import Owner from '../model/owner';
 
 const router = Router();
 
